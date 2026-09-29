@@ -1,0 +1,15 @@
+{
+  "model": "CatBoostClassifier",
+  "model_checkpoint": "checkpoint_model_8k.cbm",
+  "feature_count": 35,
+  "candidate_strategy": {
+    "base_k": 100,
+    "expansion_k": 150,
+    "expansion_rule": "predicted_count <= 1"
+  },
+  "current_threshold": 0.65,
+  "training_s1_count": 8000,
+  "tune_s1_count": 1000,
+  "holdout_s1_count": 1000,
+  "note": "Checkpoint only. Model was trained on 8,000 S1 production-distribution candidate pairs; planned 9,000-S1 retraining remains."
+}
